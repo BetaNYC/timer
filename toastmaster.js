@@ -146,12 +146,18 @@ var TSTimer = (function () {
 $(document).ready(function () {
     var speeches = [];
     speeches.push(new SpeechType("Public comment", "0:01", "2:00", "3:00", "st-table-topics"));
-    speeches.push(new SpeechType("Evaluation", "2:00", "2:30", "3:00", "st-evaluation"));
-    speeches.push(new SpeechType("Icebreaker", "4:00", "5:00", "6:00", "st-icebreaker"));
-    speeches.push(new SpeechType("Standard", "5:00", "6:00", "7:00", "st-standard"));
-    speeches.push(new SpeechType("Advanced", "8:00", "9:00", "10:00", "st-advanced"));
+    speeches.push(new SpeechType("Evaluation", "0:01", "2:30", "3:00", "st-evaluation"));
     speeches.push(new SpeechType("Test", "0:00", "0:04", "0:06", "st-test"));
     var timer = new TSTimer(speeches);
 
     timer.setDefault();
 });
+
+
+<!-- Other Speech Types 
+
+    speeches.push(new SpeechType("Icebreaker", "4:00", "5:00", "6:00", "st-icebreaker"));
+    speeches.push(new SpeechType("Standard", "5:00", "6:00", "7:00", "st-standard"));
+    speeches.push(new SpeechType("Advanced", "8:00", "9:00", "10:00", "st-advanced"));
+
+-->
